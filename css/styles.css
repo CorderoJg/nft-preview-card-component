@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+:root {
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+  --mainBG: hsl(217, 54%, 11%);
+  --cardBG: hsl(216, 50%, 16%);
+  --line: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: var(--mainBG);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.article-card {
+  width: 327px;
+  height: 540px;
+  background-color: var(--cardBG);
+  border-radius: 16px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 25px 10px 18px hsl(216, 60%, 9.8%);
+}
+
+.superior-image {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 12px;
+  background-image: url("../images/image-equilibrium.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.superior-image:hover {
+  background-image: linear-gradient(
+      rgba(0, 255, 255, 0.45),
+      rgba(0, 255, 255, 0.45)
+    ),
+    url("../images/icon-view.svg"), url("../images/image-equilibrium.jpg");
+  background-size: cover, 50px;
+  cursor: pointer;
+}
+
+.inferior {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.article-nombre {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--white);
+}
+
+.article-nombre:hover {
+  color: var(--cyan);
+  cursor: pointer;
+}
+
+.article-descripcion {
+  color: var(--soft-blue);
+  font-weight: 300;
+}
+
+.container-articlePrice-daysLeft {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-left {
+  width: 50%;
+  display: flex;
+}
+
+.container-left img {
+  margin-right: 6px;
+  height: 20px;
+}
+
+.container-right {
+  width: 50%;
+  display: flex;
+  justify-content: right;
+}
+
+.article-daysLeft {
+  margin-left: 2px;
+  line-height: 1;
+}
+
+.icon {
+  padding: 0 5px 5px 5px;
+}
+
+.container-creatorImage-creatorName {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-top: 2px solid rgb(255, 255, 255, 10%);
+  padding-top: 16px;
+}
+
+.article-price {
+  color: var(--cyan);
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.article-daysLeft {
+  color: var(--soft-blue);
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.article-creator-image {
+  width: 12%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid var(--white);
+  margin-right: 15px;
+}
+
+.article-creator-name {
+  font-family: "Outfit", sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--soft-blue);
+}
+
+span {
+  color: var(--white);
+}
+
+span:hover {
+  color: var(--cyan);
+  cursor: pointer;
+}
+
+.attribution {
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 15px;
+  font-size: 11px;
+  text-align: center;
+  color: hsl(337, 44%, 69%);
+}
+
+.attribution a {
+  color: hsl(337, 100%, 45%);
+}
+
+
